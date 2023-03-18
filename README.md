@@ -15,7 +15,7 @@
 #### Sign with Private Key
 
 ```
-./scripts/sign.sh ./message.txt
+./scripts/sign.sh ./message.txt ./private_key.pem
 ```
 
 #### Get Public Key from DID URL

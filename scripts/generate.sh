@@ -1,10 +1,13 @@
 #!/bin/bash
 
-# # Start serving "www" on localhost:3000
-# npx serve ./www --cors  &
+# Start serving "www" on localhost:3000
+npx serve ./www --cors > /dev/null &
 
-# # Start ngrok tunnel to localhost:3000
-# ngrok http 3000 &
+# Start ngrok tunnel to localhost:3000
+ngrok http 3000 > /dev/null &
+
+# Wait for servers...
+sleep 2
 
 # Get the default assigned tunnel origin
 ORIGIN=$(curl -s http://localhost:4040/api/tunnels | jq ".tunnels[0].public_url")
