@@ -6,4 +6,29 @@
 
 ### Demo
 
+#### Create DID
+
+```
+./scripts/generate.sh
+```
+
+#### Sign with Private Key
+
+```
+./scripts/sign.sh ./message.txt
+```
+
+
+#### Get Public Key from DID URL
+
+```
+./scripts/dereference.sh did:web:919ddedcf2e6.ngrok.app#key-0 public_key.pem
+```
+
+#### Verify with Public Key
+
+```
+./scripts/verify.sh ./message.txt ./message.txt.signature ./public_key.pem
+```
+
 <img src="./docs/demo.png" />
