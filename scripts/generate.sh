@@ -22,6 +22,7 @@ openssl pkey -pubout -in private_key.pem > public_key.pem
 PUBLIC_KEY=$(npx --yes eckles public_key.pem)
 rm public_key.pem
 
+# Create the DID Document
 echo '{
   "@context": ["https://www.w3.org/ns/did/v1",{"@vocab":"https://www.w3.org/ns/did/controller-dependent#"}],
   "💀": "🔥",

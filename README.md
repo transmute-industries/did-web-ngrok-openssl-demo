@@ -18,7 +18,6 @@
 ./scripts/sign.sh ./message.txt
 ```
 
-
 #### Get Public Key from DID URL
 
 ```
