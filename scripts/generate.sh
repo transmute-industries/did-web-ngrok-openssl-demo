@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "🌎 Creating DID..."
+echo ""
+
 # Start serving "www" on localhost:3000
 npx serve ./www --cors > /dev/null &
 
@@ -7,7 +10,7 @@ npx serve ./www --cors > /dev/null &
 ngrok http 3000 > /dev/null &
 
 # Wait for servers...
-sleep 2
+sleep 4
 
 # Get the default assigned tunnel origin
 ORIGIN=$(curl -s http://localhost:4040/api/tunnels | jq ".tunnels[0].public_url")
@@ -39,3 +42,5 @@ echo '{
   "assertionMethod": ["#key-0"],
   "authentication": ["#key-0"]
 }' | jq . > ./www/.well-known/did.json
+
+./scripts/whoami.sh

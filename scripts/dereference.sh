@@ -4,6 +4,7 @@
 DID_RESOLVER="https://lucid.did.cards/api/identifiers"
 
 DID_URL=$1 # did:example:123#key-0
+
 DID_PUBLIC_KEY=$2 # public_key.pem
 
 # Resolve the DID Document
