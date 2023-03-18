@@ -12,4 +12,4 @@ DID=$(cat ./www/.well-known/did.json | jq -r ".id")
 
 ./scripts/verify.sh ./message.txt ./message.txt.signature ./public_key.pem
 
-./scripts/shutdown.sh
+# ./scripts/shutdown.sh

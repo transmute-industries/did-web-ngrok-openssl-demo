@@ -54,4 +54,11 @@ Verify a file signed with openssl.
 ./scripts/verify.sh ./message.txt ./message.txt.signature ./public_key.pem
 ```
 
+#### Analyze a DID
 
+Review network details related to your DID.
+
+```sh
+DID=$(cat ./www/.well-known/did.json | jq -r ".id")
+./scripts/analyze.sh $DID
+```
