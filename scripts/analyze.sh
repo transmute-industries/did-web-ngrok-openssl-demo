@@ -1,10 +1,7 @@
 #!/bin/bash
 
-DID_RESOLVER="https://lucid.did.cards/api/identifiers"
-
 echo ""
 echo "🕵️  Analyzing DID..."
-
 
 DID_URL=$1 # did:example:123#key-0
 

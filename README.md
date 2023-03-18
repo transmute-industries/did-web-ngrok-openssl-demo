@@ -1,8 +1,21 @@
-# DID Web Tutorial
+# Web based DIDs with NGROK
+
+This repository is for demonstration purposes only.
+
+See [this presentation](https://docs.google.com/presentation/d/1f9jzWtGWzWaUsJ714h2elsuWA6Qpx24Gn7D6_B6BJxs) for details.
 
 <img src="./docs/transmute-banner.png" />
 
-#### [Questions? Contact Transmute](https://transmute.typeform.com/to/RshfIw?typeform-source=did-web-tutorial)
+#### [Questions? Contact Transmute](https://transmute.typeform.com/to/RshfIw?typeform-source=did-web-ngrok-openssl-demo)
+
+### Dependencies
+
+- [openssl](https://www.openssl.org/)
+- [curl](https://curl.se/)
+- [jq](https://stedolan.github.io/jq/)
+- [nodejs](https://nodejs.org/en)
+- [ngrok](https://ngrok.com/)
+- various bash / shell stuff...
 
 <img src="./docs/demo.png" />
 

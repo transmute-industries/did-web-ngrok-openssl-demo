@@ -40,7 +40,8 @@ echo '{
     "publicKeyJwk": '$PUBLIC_KEY'
   }],
   "assertionMethod": ["#key-0"],
-  "authentication": ["#key-0"]
+  "authentication": ["#key-0"],
+  "keyAgreement": ["#key-0"]
 }' | jq . > ./www/.well-known/did.json
 
 ./scripts/whoami.sh
