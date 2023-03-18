@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "🔬 Verifying signature..."
+echo ""
+
 FILE=$1
 SIGNATURE=$2
 PUBLIC_KEY=$3

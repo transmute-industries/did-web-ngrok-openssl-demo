@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "🔏 Creating signature..."
+echo ""
+
 FILE=$1
 SIGNATURE=$2
 PRIVATE_KEY=$3
